@@ -16,4 +16,10 @@ Crawl-delay: 1
 Disallow: /admin/
 Disallow: /private/
 Disallow: *.tmp$
-Disallow: *.log$ 
+Disallow: *.log$
+
+# Block specific paths
+Disallow: /assets/fonts/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/ 
