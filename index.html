@@ -678,11 +678,6 @@
     <script>
         // 页面加载完成后自动滚动到生成器部分
         window.addEventListener('load', function() {
-            // 如果URL没有hash，自动添加并滚动
-            if (!window.location.hash) {
-                window.location.hash = '#generator';
-            }
-            
             // 平滑滚动到生成器部分
             document.getElementById('generator').scrollIntoView({ 
                 behavior: 'smooth',
