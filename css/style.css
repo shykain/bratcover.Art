@@ -67,18 +67,22 @@ body {
 /* Accessibility */
 .skip-link {
     position: absolute;
-    top: -40px;
-    left: 6px;
-    background: var(--brat-black);
-    color: var(--brat-white);
-    padding: 8px;
+    top: -1000px;
+    left: -1000px;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
     text-decoration: none;
-    z-index: 1000;
-    border-radius: var(--border-radius);
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .skip-link:focus {
-    top: 6px;
+    top: 16px;
+    left: 16px;
+    opacity: 1;
 }
 
 .visually-hidden {
